@@ -1,0 +1,88 @@
+/*Nhập font tại đây*/
+@font-face {
+    font-family: 'play-write';
+    src: url('/assets/font/Playwrite_CU/static/PlaywriteCU-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Đặt biến ở đây*/
+
+
+/*Code SCSS tại đây*/
+body {
+    background: transparent;
+    .topbar {
+        display: flex;
+        justify-content:space-between;
+        margin: 0 5%;
+
+        .left {
+            width: 50%;
+            ul {
+                list-style: none;
+                border: 1px solid gray;     
+                li {
+                    border: 1px solid gray;
+                    margin: 0;
+                    padding: 0 20px;
+                }
+            }
+            .list-left {
+                display: flex;
+                justify-content: flex-start;
+            }
+            
+        }
+        .right {
+            width: 50%;
+            ul {
+                list-style: none;
+                border: 1px solid gray;
+                li {
+                    border: 1px solid gray;
+                    margin: 0;
+                    padding: 0 20px;
+                }
+            }
+            .list-right {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    nav {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .left, .right {
+                margin: 0;
+                width: 30%;
+                ul {
+                    padding: 0px;
+                    list-style: none;
+                    li {
+                        font-size: 15px;
+                        font-weight: 400;
+                        padding: 0 20px;
+                    }
+                }
+            }
+            .left>.list-left, .right>.list-right {
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+            }
+            .logo {
+                span {
+                    font-family: 'play-write', sans-serif;
+                    font-weight: 800;
+                    font-size: 30px;
+                }  
+            }
+            
+        }
+    }
+}

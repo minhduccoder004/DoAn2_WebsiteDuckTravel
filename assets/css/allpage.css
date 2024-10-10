@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('/assets/font/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: 'roboto';
+    font-size: 15px;
+    font-weight: 100;
+}
